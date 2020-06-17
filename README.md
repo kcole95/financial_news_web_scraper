@@ -11,4 +11,13 @@ It is recommended that a virtual environment is created. Download the modules li
 
 3. Run scraper.py. This will prompt the user to confirm whether an existing postgreSQL table *with the correct columns* already exists (essentially checking if this script has been run before). If no such table exists, a new one will be created (scraper.py will prompt the user to define the table name). 
 
-Note: scraper.py will also write the scraped data to the csv files in the raw_webpages folder to allow quick viewing of the information with a module such as pandas.
+Note: scraper.py will also write the scraped data to the csv files in the raw_webpages folder to allow quick viewing of the information with a module such as pandas. The scraped information includes the following:
+
+- *Date* that the articles were written/uploaded
+- *Category* of the articles such as 'Fintech', 'Cryptocurrency', 'Markets', 'Investing' etc.
+- *Title* of the articles
+- *Summary*
+- *Full text*
+- *URL*
+
+
