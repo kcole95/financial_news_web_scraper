@@ -1,8 +1,8 @@
 # financial_news_web_scraper
-A web scraper which extracts text from financial articles on Reuters' and Forbes' websites, and feeds them into a postgreSQL database.
+A web scraper which extracts text from financial articles on Reuters' and Forbes' websites, and feeds them into a postgreSQL table using the psycopg2 module.
 
 ## Getting Started
-It is recommended that a virtual environment is created. The modules listed in the requirements.txt file will be needed for the scripts to function.
+It is recommended that a virtual environment is created. Download the modules listed in the requirements.txt file.
 
 ## Usage
 Fill out the database_details.py file with the appropriate information. This will require an existing database to connect to, as well as a user profile.
