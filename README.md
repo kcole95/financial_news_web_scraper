@@ -5,8 +5,10 @@ A web scraper which extracts text from financial articles on Reuters' and Forbes
 It is recommended that a virtual environment is created. Download the modules listed in the requirements.txt file.
 
 ## Usage
-Fill out the database_details.py file with the appropriate information. This will require an existing database to connect to, as well as a user profile.
+1. Create a new folder in the working directory called 'raw_webpages'. Move the csv files into this folder.
 
-Run scraper.py. This will prompt the user to confirm whether an existing postgreSQL table *with the correct columns* already exists (essentially checking if this script has been run before). If no such table exists, a new one will be created (scraper.py will prompt the user to define the table name). 
+2. Fill out the database_details.py file with the appropriate information. This will require an existing database to connect to, as well as a user profile.
 
-scraper.py will also write the scraped data to csv files in the working directory to allow quick viewing of the information with a module such as pandas.
+3. Run scraper.py. This will prompt the user to confirm whether an existing postgreSQL table *with the correct columns* already exists (essentially checking if this script has been run before). If no such table exists, a new one will be created (scraper.py will prompt the user to define the table name). 
+
+Note: scraper.py will also write the scraped data to the csv files in the raw_webpages folder to allow quick viewing of the information with a module such as pandas.
